@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@515&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Varta', sans-serif;
+    width: 100%;
+    height: auto;
+}
+.header{
+    width: 100%;
+    background: url('./img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+    background-size: cover;
+}
+nav{
+    position: absolute;
+    top: 30px;
+    display: flex;
+    left:0%;
+    width: 100%;
+    height:50px;
+    align-items: center;
+}
+.logo h1{
+        position:absolute;
+        top: 30px;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        margin-left: 140px;
+    }
+.nav-items{
+    display: flex;
+    list-style: none;
+    margin: auto;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 30%;
+}
+.nav-items li{
+    margin: auto;
+    float: right;
+    height:auto;
+    text-align: center;
+}
+.nav-items li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+.nav-items li a:hover{
+    color: #02AFAE;
+}
+.social-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    float: left;
+    margin-right:140px;
+    list-style: none;
+}
+.social-items li{
+    float: right;
+    margin:0px 5px;
+}
+.social-items li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+.fa-facebook:hover{
+    color: #3b5998;
+    transition: 0.3s ease-in-out;
+}
+.fa-twitter:hover{
+    color: #1da1f2;
+    transition: 0.3s ease-in-out;
+}
+.fa-youtube:hover{
+    color: #ff0000;
+    transition: 0.3s ease-in-out;
+}
+.fa-instagram:hover{
+    color: #c32aa3;
+    transition: 0.3s ease-in-out;
+}
+.fa-linkedin:hover{
+    color: #007bb5;
+    transition: 0.3s ease-in-out;
+}
+.info{
+    width: 70%;
+    margin: auto;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform:translate(-50%,30%);
+    text-align: center;
+}
+.info h2{
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+}
+.info h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+.info h3{
+    color:white;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -15px;
+}
+.info .button button{
+    color: #1B3D9F;
+    padding:8px 10px;
+    display: inline-block;
+    width: 140px;
+    height: auto;
+    border: 1.5px solid white;
+    border-radius: 30px;
+    margin: 10px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+}
+.info .button{
+    margin-top: 25px;
+}
+#btn2{
+    background: transparent;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+#btn2:hover{
+    background-color: white;
+    color: #1B3D9F;
+}
+#btn1:hover{
+    background: transparent;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+#response{
+    font-size: 30px;
+    position: absolute;
+    top:25px;
+    right: 30px;
+    display: none;
+}
+
+
+/*----------------ABOUT---------------*/
+
+.about{
+    width:60%;
+    margin:50px auto;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2), 0 6px 18px 0 rgba(0,0,0,0.2);
+    height:auto;
+    text-align: center;
+}
+.about h2{
+    padding: 30px 0px;
+    font-size: 30px;
+    color: #02AFAE;
+}
+.about p{
+    font-size: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+.about button{
+    padding:8px 10px;
+    border: 1.5px solid white;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #02AFAE;
+    width: 140px;
+    height: auto;
+    border: 1.5px solid #02AFAE;
+    margin: 20px auto;
+}
+.about button a{
+    text-decoration: none;
+    color: white;
+}
+.about button:hover{
+    background: transparent;
+    border: 1.5px solid #02AFAE;
+    transition: 0.5s ease;
+}
+.about button:hover > a{
+    color: #02AFAE;
+    transition: 0.5s ease;
+}
+
+
+/*------------------MY WORKS--------------*/
+.work{
+    width: 100%;
+    text-align: center;
+    margin: 200px auto;
+}
+.work .work-title h2{
+    font-size: 30px;
+    color: #02AFAE;
+}
+.my-work{
+    width: 70%;
+    margin:20px auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit,minmax(23%,1fr));
+    grid-gap:20px;
+}
+.my-work .work-container{
+    display: block;
+    align-items: center;
+    text-align: center;
+    border:1px solid white;
+    outline: none;
+}
+.my-work .work-container:hover{
+    border: 1px solid #02AFAE;
+    transition: 0.8s ease;
+    border-radius: 5px;
+}
+.my-work .work-container .img-work{
+    width: 30%;
+    height: auto;
+    padding: 30px 0px;
+    margin: auto;
+}
+.my-work .work-container .img-work img{
+    max-width: 100%;
+    color: #02AFAE;
+}
+.my-work .work-container .work-info{
+    padding-top: 20px;
+}
+.my-work .work-container .work-info p{
+    font-size: 20px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    color: #02AFAE;
+}
+
+
+
+
+
+
+/*--------------RESPONSIVE-------------------*/
+
+
+@media screen and (max-width:1100px){
+    nav{
+        position: absolute;
+        top: 0%;
+        left:-100%;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        background: linear-gradient(30deg, #3b5998, #02AFAE);
+        transition: 0.5s ease-in-out;
+    }
+    .nav-items{
+        width: 100%;
+        margin-left: 0px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .nav-items li{
+        margin: 30px 0px;
+    }
+    .social-items{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .social-items li{
+        margin:0px 10px
+    }
+    #response{
+        display:block;
+        z-index: 2;
+        color: white;
+    }
+    .fa-times{
+        visibility: hidden;
+        transition: 0.5s ease-in-out;
+        opacity:0;
+    }
+    .fa-bars{
+        visibility: visible;
+        transition: 0.5s ease-in-out;
+        opacity: 1;
+    }
+    .work{
+        width: 100%;
+        text-align: center;
+        margin: 70px auto;
+    }
+    .my-work{
+        width: 70%;
+        margin:20px auto;
+        display: grid;
+        grid-template-columns: repeat( auto-fit,minmax(40%,1fr));
+        grid-gap:20px;
+    }
+    .about{
+        width: 80%;
+    }
+    .about h2{
+        padding: 30px 0px;
+        font-size: 25px;
+        color: #02AFAE;
+    }
+    .about p{
+        font-size: 15px;
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:550px){
+    .my-work{
+        width: 70%;
+        margin:20px auto;
+        display: grid;
+        grid-template-columns: repeat( auto-fit,minmax(50%,1fr));
+        grid-gap:20px;
+    }
+    .info{
+        width: 70%;
+        margin: auto;
+        height: auto;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform:translate(-50%,30%);
+        text-align: center;
+    }
+    .logo h1{
+        position:absolute;
+        top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-left: 50px;
+    }
+    .info h1{
+        font-size: 50px;
+    }
+    .info h2{
+        font-size: 25px;
+    }
+    .info h3{
+        font-size: 15px;
+        padding: 10px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------About-Part------------------*/
+.about-info{
+    position: relative;
+    top: 15%;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.about-info h1{
+    color: white;
+    font-size: 50px;
+}
+.about-info p{
+    color: black;
+    font-size: 25px;
+}
+.about-info button{
+    padding:10px 20px;
+    border: 1.5px solid white;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #02AFAE;
+    width: 200px;
+    height: auto;
+    border: 1.5px solid #02AFAE;
+    margin: 20px auto;
+    text-align: center;
+}
+.about-info button a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.about-info button:hover{
+    background: transparent;
+    border: 1.5px solid #02AFAE;
+    transition: 0.5s ease;
+}
+.about-info button:hover > a{
+    color: #02AFAE;
+    transition: 0.5s ease;
+}
